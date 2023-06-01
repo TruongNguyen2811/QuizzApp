@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941961383937",
+    "project_id": "quizzlet-f9990",
+    "storage_bucket": "quizzlet-f9990.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941961383937:android:21644c6c6940fd88d3b000",
+        "android_client_info": {
+          "package_name": "com.example.quizzlet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY2RVRKsBVutn6Htm8VnAmBmhJjls8NUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
