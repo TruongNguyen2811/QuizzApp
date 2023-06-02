@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:quizzlet/main.dart';
+import 'package:get/get.dart';
+import 'package:quizzlet/page/homepage.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class WelcomePage extends StatefulWidget {
+  const WelcomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<WelcomePage> createState() => _WelcomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -51,7 +53,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                   // foreground
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(
+                    Homepage(),
+                  );
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.center,
