@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
+import 'package:quizzlet/page/QuizzPageComponets/quizzcard.dart';
+import 'package:quizzlet/page/quizzpage.dart';
 
 class MyWidget extends StatelessWidget {
   final String title;
@@ -19,18 +22,21 @@ class MyWidget extends StatelessWidget {
       child: new InkWell(
         onTap: () {
           // print("tapped");
+          Get.to(QuizzPage(
+            Subject: title,
+          ));
         },
         child: new Container(
-          height: MediaQuery.of(context).size.width * 0.45,
+          height: MediaQuery.of(context).size.width * 0.4,
           width: MediaQuery.of(context).size.width * 0.45,
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          // padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
-                  color: Color.fromARGB(255, 122, 121, 121), blurRadius: 10.0)
+                  color: Color.fromARGB(255, 122, 121, 121), blurRadius: 5.0)
             ],
             shape: BoxShape.rectangle,
-            borderRadius: BorderRadius.circular(40),
+            borderRadius: BorderRadius.circular(20),
             color: Color.fromARGB(255, 241, 241, 241),
           ),
           child: Column(
@@ -46,16 +52,16 @@ class MyWidget extends StatelessWidget {
                       Container(
                         decoration: BoxDecoration(
                           // shape: BoxShape.rectangle,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color.fromARGB(255, 180, 180, 180)
-                                  .withOpacity(0.6),
-                              // borderRadius
-                              spreadRadius: 4,
-                              blurRadius: 20,
-                              offset: Offset(0, 30),
-                            ),
-                          ],
+                          // boxShadow: [
+                          //   BoxShadow(
+                          //     color: Color.fromARGB(255, 180, 180, 180)
+                          //         .withOpacity(0.6),
+                          //     // borderRadius
+                          //     spreadRadius: 4,
+                          //     blurRadius: 50,
+                          //     offset: Offset(0, 40),
+                          //   ),
+                          // ],
                           borderRadius: BorderRadius.circular(60),
                         ),
                       ),

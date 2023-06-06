@@ -32,7 +32,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
-                    color: Colors.purple[800],
+                    color: Color.fromARGB(255, 106, 184, 249),
                   ),
                 )
               ],
